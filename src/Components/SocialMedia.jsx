@@ -12,7 +12,7 @@ const SocialMedia = () => {
   return (
     <div className="app__social">
       <div>
-        <a href="https://www.linkedin.com/in/muhammad-noman-770825277/">
+        <a href="https://www.linkedin.com/in/muhammad-noman-770825277/" target="_blank">
           <AiFillLinkedin />
         </a>
       </div>
@@ -39,7 +39,7 @@ const SocialMedia = () => {
       </div>
       <div>
       <a
-          href="https://x.com/NomiTechh?t=13PuVJbUrkGvwqPLn4Th7A&s=09"
+          href="https://instagram.com/nomitechh?utm_source=qr&igshid=OGIxMTE0OTdkZA=="
           target="_blank"
         >
           <AiOutlineInstagram />
