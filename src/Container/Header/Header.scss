@@ -251,15 +251,15 @@
             
             align-items: center;
          
-            gap: 1rem;
+          
 
             // flex-wrap: wrap;
 
             margin-top: 0;
             
-            .circle-cmp {
-                width: 60px;
-                height: 60px;
+            div{
+                width: 30px;
+                height: 30px;
                
                 border-radius: 50%;
                 background: var(--white-color);
@@ -268,8 +268,8 @@
                 margin: 1rem;
     
                 img {
-                    width: 60%;
-                    height: 60%;
+                    width: 50%;
+                    height: 50%;
                 }
             }
             div:nth-child(1) {
