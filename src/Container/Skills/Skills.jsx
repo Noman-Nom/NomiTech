@@ -29,10 +29,10 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">
+      <h2 className="head-text" id="skills">
         Skills <span>&</span> Experience
       </h2>
-      <div className="app__skills-container">
+      <div className="app__skills-container" >
         <motion.div className="app__skills-list">
           {skills.map((skill) => (
             <motion.div

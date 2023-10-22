@@ -40,7 +40,8 @@ const Footer = () => {
   };
   return (
     <>
-      <h2 className="head-text">Contact With Me</h2>
+      <h2 className="head-text" id="contacts"> <span>Contact Me</span> <br />
+      Your Project, My Passion – Get in Touch </h2>
 
       <div className="app__footer-cards">
         <div className="app__footer-card">

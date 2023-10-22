@@ -40,7 +40,7 @@ const Testimonials = () => {
         <>
         {testimonials.length &&(
           <>
-          <div className="app__testimonials-item app__flex">
+          <div className="app__testimonials-item app__flex" id='testimonials'>
         
           <img src={urlFor(test.imageurl)}  />
 

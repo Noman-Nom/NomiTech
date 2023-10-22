@@ -46,12 +46,12 @@ const Work = () => {
   };
   return (
     <>
-      <h2 className="head-text">
-        My <span>Full Stack</span> Web Development <br /> <span>Portfolio</span>{" "}
+      <h2 className="head-text" id="work">
+        My <span>Full Stack</span> Web Development <br /> <span>Projects</span>{" "}
         Section{" "}
       </h2>
 
-      <div className="app__work-filter">
+      <div className="app__work-filter" >
         {[  "ALL","React js", "Full-Stack", "HTML/CSS/JS","University-Project", "Final Year Project",].map(
           (item, index) => (
             <div

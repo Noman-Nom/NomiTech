@@ -55,7 +55,7 @@ const About = () => {
         Meets Great <span>Business Outcomes</span>"
       </h2>
 
-      <div className="app__profiles">
+      <div className="app__profiles" id="about">
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
