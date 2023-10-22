@@ -95,11 +95,12 @@
         svg{
             width: 25px;
             height: 25px;
-            color: rgb(14 165 233);
+            // color: var(--black-color);
+            color: rgb(66, 66, 66);
             
         }
         &:hover{
-            background-color: rgb(14 165 233);
+            background-color: rgb(66, 66, 66);
 
             svg{
                 color: var(--white-color);
