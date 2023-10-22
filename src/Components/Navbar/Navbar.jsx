@@ -33,20 +33,29 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-icons">
-        <a className="app__flex" href="">
+      <a  className="app__flex" href="https://www.linkedin.com/in/muhammad-noman-770825277/" target="_blank">
+          <AiFillLinkedin />
+        </a>
+        <a  className="app__flex"href="https://github.com/Noman-Nom" target="_blank">
+          <AiFillGithub />
+        </a>
+        <a className="app__flex"
+          href="https://www.facebook.com/muhammadnoman.awan.73?mibextid=ZbWKwL"
+          target="_blank"
+        >
           <AiFillFacebook />
         </a>
-        <a className="app__flex" href="">
-          <AiFillFacebook />
+        <a className="app__flex"
+          href="https://x.com/NomiTechh?t=13PuVJbUrkGvwqPLn4Th7A&s=09"
+          target="_blank"
+        >
+          <AiFillTwitterCircle />
         </a>
-        <a className="app__flex" href="">
-          <AiFillFacebook />
-        </a>
-        <a className="app__flex" href="">
-          <AiFillFacebook />
-        </a>
-        <a className="app__flex" href="">
-          <AiFillFacebook />
+        <a className="app__flex"
+          href="https://instagram.com/nomitechh?utm_source=qr&igshid=OGIxMTE0OTdkZA=="
+          target="_blank"
+        >
+          <AiOutlineInstagram />
         </a>
     
       </div>
