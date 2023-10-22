@@ -78,6 +78,41 @@
         }
     }
 }
+.app__navbar-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: flex-start;
+    a{
+        width: 35px;
+        height: 35px;
+        background-color: var(--white-color);
+        border-radius: 50%;
+        text-decoration: none;
+        transition: all .4s ease-in-out;
+        svg{
+            width: 25px;
+            height: 25px;
+            color: var(--secondary-color);
+            
+        }
+        &:hover{
+            background-color: var(--secondary-color);
+
+            svg{
+                color: var(--white-color);
+            }
+        }
+        
+        
+    }
+    
+    
+    
+    
+}
 
 .app__navbar-menu{
 

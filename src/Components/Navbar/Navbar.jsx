@@ -1,20 +1,22 @@
 import React from "react";
-import { useState,  } from "react";
+import { useState } from "react";
 
 import { BsFillMenuButtonWideFill } from "react-icons/bs";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { motion } from "framer-motion";
+import {
+  AiFillGithub,
+  AiFillFacebook,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+  AiOutlineInstagram,
+} from "react-icons/ai";
 
-
-
- 
 import { images } from "../../Constants";
-
 
 import "./Navbar.scss";
 
 const Navbar = () => {
-
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="app__navbar">
@@ -25,36 +27,55 @@ const Navbar = () => {
         {["Home", "About", "Work", "Skills", "Contacts"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <a href={`#${item}`}>{item}</a>
-            <div/>
-           
+            <div />
           </li>
         ))}
-
       </ul>
-           
 
+      <div className="app__navbar-icons">
+        <a className="app__flex" href="">
+          <AiFillFacebook />
+        </a>
+        <a className="app__flex" href="">
+          <AiFillFacebook />
+        </a>
+        <a className="app__flex" href="">
+          <AiFillFacebook />
+        </a>
+        <a className="app__flex" href="">
+          <AiFillFacebook />
+        </a>
+        <a className="app__flex" href="">
+          <AiFillFacebook />
+        </a>
+    
+      </div>
 
       <div className="app__navbar-menu">
-        <BsFillMenuButtonWideFill className="icon" onClick={() => setToggle(true)} />
+        <BsFillMenuButtonWideFill
+          className="icon"
+          onClick={() => setToggle(true)}
+        />
         {toggle && (
-          <motion.div className="motion-div"
+          <motion.div
+            className="motion-div"
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}
           >
-            <AiOutlineCloseCircle  className="close-icon" onClick={() => setToggle(false)} />
-              <ul>
-
-             
-            {["Home", "About", "Work", "Skills", "Contacts"].map((item) => (
-          <li  key={item}>
-            <a href={`#${item}`} onClick={() => setToggle(false)} >{item}</a>
-            <div />
-          
-          </li>
-        ))}
-
-</ul>
-           
+            <AiOutlineCloseCircle
+              className="close-icon"
+              onClick={() => setToggle(false)}
+            />
+            <ul>
+              {["Home", "About", "Work", "Skills", "Contacts"].map((item) => (
+                <li key={item}>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
+                  <div />
+                </li>
+              ))}
+            </ul>
           </motion.div>
         )}
       </div>
