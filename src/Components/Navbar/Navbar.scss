@@ -216,6 +216,40 @@
                          }
                      }
             }
+
+            .app__navbar-menu-icons{
+                display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    cursor: pointer;
+    justify-content: flex-start;
+    align-items: flex-start;
+    a{
+        width: 35px;
+        height: 35px;
+        background-color: var(--white-color);
+        border-radius: 50%;
+        text-decoration: none;
+        transition: all .4s ease-in-out;
+        svg{
+            width: 25px;
+            height: 25px;
+            // color: var(--black-color);
+            color: rgb(66, 66, 66);
+            
+        }
+        &:hover{
+            background-color: rgb(66, 66, 66);
+
+            svg{
+                color: var(--white-color);
+            }
+        }
+        
+        
+    }
+
+            }
         }
       
         @media screen and (min-width: 900px) {
