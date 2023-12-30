@@ -42,7 +42,7 @@ const Testimonials = () => {
           <>
           <div className="app__testimonials-item app__flex" id='testimonials'>
         
-          <img src={urlFor(test.imageurl)}  />
+          <img src={urlFor(test.imageurl)}  alt='img' />
 
           <div className="app__testimonials-content">
             <p className="p-text">{test.feedback}</p>

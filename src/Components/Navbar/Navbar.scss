@@ -110,7 +110,7 @@
         
     }
     
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 800px) {
     
         display: none;
     }
@@ -218,8 +218,10 @@
             }
 
             .app__navbar-menu-icons{
-                display: flex;
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    width: 180px;
     gap: 1rem;
     cursor: pointer;
     justify-content: flex-start;

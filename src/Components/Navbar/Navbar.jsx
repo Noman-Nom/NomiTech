@@ -33,27 +33,27 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-icons">
-      <a  className="app__flex" href="https://www.linkedin.com/in/muhammad-noman-770825277/" target="_blank">
+      <a  className="app__flex" href="https://www.linkedin.com/in/muhammad-noman-770825277/" target="_blank" rel="noreferrer">
           <AiFillLinkedin />
         </a>
-        <a  className="app__flex"href="https://github.com/Noman-Nom" target="_blank">
+        <a  className="app__flex"href="https://github.com/Noman-Nom" target="_blank" rel="noreferrer">
           <AiFillGithub />
         </a>
         <a className="app__flex"
           href="https://www.facebook.com/muhammadnoman.awan.73?mibextid=ZbWKwL"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           <AiFillFacebook />
         </a>
         <a className="app__flex"
           href="https://x.com/NomiTechh?t=13PuVJbUrkGvwqPLn4Th7A&s=09"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           <AiFillTwitterCircle />
         </a>
         <a className="app__flex"
           href="https://instagram.com/nomitechh?utm_source=qr&igshid=OGIxMTE0OTdkZA=="
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           <AiOutlineInstagram />
         </a>
@@ -84,33 +84,38 @@ const Navbar = () => {
                   <div />
                 </li>
               ))}
-            <div className="app__navbar-menu-icons">
-      <a  className="app__flex" href="https://www.linkedin.com/in/muhammad-noman-770825277/" target="_blank">
+
+
+            <motion.div 
+            whileInView={{opacity:[0,1]}}
+            transition={{duration:0.5}}
+            className="app__navbar-menu-icons">
+      <a  className="app__flex" href="https://www.linkedin.com/in/muhammad-noman-770825277/" target="_blank" rel="noreferrer">
           <AiFillLinkedin />
         </a>
-        <a  className="app__flex"href="https://github.com/Noman-Nom" target="_blank">
+        <a  className="app__flex"href="https://github.com/Noman-Nom" target="_blank" rel="noreferrer">
           <AiFillGithub />
         </a>
         <a className="app__flex"
           href="https://www.facebook.com/muhammadnoman.awan.73?mibextid=ZbWKwL"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           <AiFillFacebook />
         </a>
         <a className="app__flex"
           href="https://x.com/NomiTechh?t=13PuVJbUrkGvwqPLn4Th7A&s=09"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           <AiFillTwitterCircle />
         </a>
         <a className="app__flex"
           href="https://instagram.com/nomitechh?utm_source=qr&igshid=OGIxMTE0OTdkZA=="
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           <AiOutlineInstagram />
         </a>
     
-      </div>
+      </motion.div>
             </ul>
 
           </motion.div>
